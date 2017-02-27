@@ -11,6 +11,11 @@
 		4F1C133C1E63D9D9006BC53F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C133A1E63D9D9006BC53F /* Main.storyboard */; };
 		4F1C133E1E63D9D9006BC53F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C133D1E63D9D9006BC53F /* Assets.xcassets */; };
 		4F1C13411E63D9D9006BC53F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C133F1E63D9D9006BC53F /* LaunchScreen.storyboard */; };
+		4F1C13541E63FE81006BC53F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C13521E63FE81006BC53F /* Home.storyboard */; };
+		4F1C13571E63FEC9006BC53F /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C13551E63FEC9006BC53F /* Live.storyboard */; };
+		4F1C135A1E63FF05006BC53F /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C13581E63FF05006BC53F /* Follow.storyboard */; };
+		4F1C135D1E63FF37006BC53F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C135B1E63FF37006BC53F /* Profile.storyboard */; };
+		4F1C135F1E6401D1006BC53F /* LSLMainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C135E1E6401D1006BC53F /* LSLMainTabbarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		4F1C133D1E63D9D9006BC53F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F1C13401E63D9D9006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F1C13421E63D9D9006BC53F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F1C13531E63FE81006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		4F1C13561E63FEC9006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
+		4F1C13591E63FF05006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		4F1C135C1E63FF37006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		4F1C135E1E6401D1006BC53F /* LSLMainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSLMainTabbarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +64,6 @@
 			children = (
 				4F1C13481E63ECC1006BC53F /* Classes */,
 				4F1C13361E63D9D9006BC53F /* AppDelegate.swift */,
-				4F1C133A1E63D9D9006BC53F /* Main.storyboard */,
 				4F1C133D1E63D9D9006BC53F /* Assets.xcassets */,
 				4F1C133F1E63D9D9006BC53F /* LaunchScreen.storyboard */,
 				4F1C13421E63D9D9006BC53F /* Info.plist */,
@@ -78,6 +87,7 @@
 		4F1C13491E63ECC1006BC53F /* Follow */ = {
 			isa = PBXGroup;
 			children = (
+				4F1C13581E63FF05006BC53F /* Follow.storyboard */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -85,6 +95,7 @@
 		4F1C134A1E63ECC1006BC53F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				4F1C13521E63FE81006BC53F /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -92,6 +103,7 @@
 		4F1C134B1E63ECC1006BC53F /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				4F1C13551E63FEC9006BC53F /* Live.storyboard */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -99,6 +111,8 @@
 		4F1C134C1E63ECC1006BC53F /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				4F1C133A1E63D9D9006BC53F /* Main.storyboard */,
+				4F1C135E1E6401D1006BC53F /* LSLMainTabbarController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -106,6 +120,7 @@
 		4F1C134D1E63ECC1006BC53F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				4F1C135B1E63FF37006BC53F /* Profile.storyboard */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -143,6 +158,7 @@
 		4F1C132B1E63D9D9006BC53F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LSL;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = loveling;
@@ -180,6 +196,10 @@
 				4F1C13411E63D9D9006BC53F /* LaunchScreen.storyboard in Resources */,
 				4F1C133E1E63D9D9006BC53F /* Assets.xcassets in Resources */,
 				4F1C133C1E63D9D9006BC53F /* Main.storyboard in Resources */,
+				4F1C13571E63FEC9006BC53F /* Live.storyboard in Resources */,
+				4F1C13541E63FE81006BC53F /* Home.storyboard in Resources */,
+				4F1C135D1E63FF37006BC53F /* Profile.storyboard in Resources */,
+				4F1C135A1E63FF05006BC53F /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F1C135F1E6401D1006BC53F /* LSLMainTabbarController.swift in Sources */,
 				4F1C13371E63D9D9006BC53F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -203,6 +224,7 @@
 				4F1C133B1E63D9D9006BC53F /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		4F1C133F1E63D9D9006BC53F /* LaunchScreen.storyboard */ = {
@@ -211,6 +233,42 @@
 				4F1C13401E63D9D9006BC53F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4F1C13521E63FE81006BC53F /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F1C13531E63FE81006BC53F /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		4F1C13551E63FEC9006BC53F /* Live.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F1C13561E63FEC9006BC53F /* Base */,
+			);
+			name = Live.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		4F1C13581E63FF05006BC53F /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F1C13591E63FF05006BC53F /* Base */,
+			);
+			name = Follow.storyboard;
+			path = ../Main;
+			sourceTree = "<group>";
+		};
+		4F1C135B1E63FF37006BC53F /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F1C135C1E63FF37006BC53F /* Base */,
+			);
+			name = Profile.storyboard;
+			path = ../Main;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -316,11 +374,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = GEU5356DKB;
 				INFOPLIST_FILE = LSLZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lsl.LSLZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -331,11 +390,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = GEU5356DKB;
 				INFOPLIST_FILE = LSLZB/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lsl.LSLZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -358,6 +418,7 @@
 				4F1C13471E63D9D9006BC53F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
