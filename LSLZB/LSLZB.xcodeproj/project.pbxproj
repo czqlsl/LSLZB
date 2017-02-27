@@ -15,7 +15,9 @@
 		4F1C13571E63FEC9006BC53F /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C13551E63FEC9006BC53F /* Live.storyboard */; };
 		4F1C135A1E63FF05006BC53F /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C13581E63FF05006BC53F /* Follow.storyboard */; };
 		4F1C135D1E63FF37006BC53F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C135B1E63FF37006BC53F /* Profile.storyboard */; };
-		4F1C135F1E6401D1006BC53F /* LSLMainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1C135E1E6401D1006BC53F /* LSLMainTabbarController.swift */; };
+		4FF8BA291E64126A002440D6 /* LSLMainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8BA281E64126A002440D6 /* LSLMainTabbarController.swift */; };
+		4FF8BA371E641360002440D6 /* LSLHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8BA361E641360002440D6 /* LSLHomeController.swift */; };
+		4FF8BA3D1E6418AB002440D6 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8BA3C1E6418AB002440D6 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +31,9 @@
 		4F1C13561E63FEC9006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 		4F1C13591E63FF05006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		4F1C135C1E63FF37006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
-		4F1C135E1E6401D1006BC53F /* LSLMainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSLMainTabbarController.swift; sourceTree = "<group>"; };
+		4FF8BA281E64126A002440D6 /* LSLMainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSLMainTabbarController.swift; sourceTree = "<group>"; };
+		4FF8BA361E641360002440D6 /* LSLHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSLHomeController.swift; sourceTree = "<group>"; };
+		4FF8BA3C1E6418AB002440D6 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +91,9 @@
 		4F1C13491E63ECC1006BC53F /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				4F1C13581E63FF05006BC53F /* Follow.storyboard */,
+				4FF8BA2D1E6412BE002440D6 /* Controller */,
+				4FF8BA2E1E6412BE002440D6 /* Model */,
+				4FF8BA2F1E6412BE002440D6 /* View */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -95,7 +101,9 @@
 		4F1C134A1E63ECC1006BC53F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				4F1C13521E63FE81006BC53F /* Home.storyboard */,
+				4FF8BA2A1E6412A2002440D6 /* Controller */,
+				4FF8BA2B1E6412A2002440D6 /* Model */,
+				4FF8BA2C1E6412A2002440D6 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -103,7 +111,9 @@
 		4F1C134B1E63ECC1006BC53F /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				4F1C13551E63FEC9006BC53F /* Live.storyboard */,
+				4FF8BA301E6412DB002440D6 /* Controller */,
+				4FF8BA311E6412DB002440D6 /* Model */,
+				4FF8BA321E6412DB002440D6 /* View */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -111,8 +121,9 @@
 		4F1C134C1E63ECC1006BC53F /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				4F1C133A1E63D9D9006BC53F /* Main.storyboard */,
-				4F1C135E1E6401D1006BC53F /* LSLMainTabbarController.swift */,
+				4FF8BA251E641232002440D6 /* Controller */,
+				4FF8BA261E641232002440D6 /* Model */,
+				4FF8BA271E641232002440D6 /* View */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -120,7 +131,9 @@
 		4F1C134D1E63ECC1006BC53F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				4F1C135B1E63FF37006BC53F /* Profile.storyboard */,
+				4FF8BA331E6412EF002440D6 /* Controller */,
+				4FF8BA341E6412EF002440D6 /* Model */,
+				4FF8BA351E6412EF002440D6 /* View */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -128,8 +141,129 @@
 		4F1C134E1E63ECC1006BC53F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				4FF8BA381E641813002440D6 /* Extension */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		4FF8BA251E641232002440D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C133A1E63D9D9006BC53F /* Main.storyboard */,
+				4FF8BA281E64126A002440D6 /* LSLMainTabbarController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FF8BA261E641232002440D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FF8BA271E641232002440D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FF8BA2A1E6412A2002440D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C13521E63FE81006BC53F /* Home.storyboard */,
+				4FF8BA361E641360002440D6 /* LSLHomeController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FF8BA2B1E6412A2002440D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FF8BA2C1E6412A2002440D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FF8BA2D1E6412BE002440D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C13581E63FF05006BC53F /* Follow.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FF8BA2E1E6412BE002440D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FF8BA2F1E6412BE002440D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FF8BA301E6412DB002440D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C13551E63FEC9006BC53F /* Live.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FF8BA311E6412DB002440D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FF8BA321E6412DB002440D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FF8BA331E6412EF002440D6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4F1C135B1E63FF37006BC53F /* Profile.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4FF8BA341E6412EF002440D6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4FF8BA351E6412EF002440D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4FF8BA381E641813002440D6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4FF8BA3C1E6418AB002440D6 /* UIBarButtonItem+Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +300,7 @@
 					4F1C13321E63D9D9006BC53F = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = GEU5356DKB;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -210,8 +345,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F1C135F1E6401D1006BC53F /* LSLMainTabbarController.swift in Sources */,
+				4FF8BA291E64126A002440D6 /* LSLMainTabbarController.swift in Sources */,
+				4FF8BA371E641360002440D6 /* LSLHomeController.swift in Sources */,
 				4F1C13371E63D9D9006BC53F /* AppDelegate.swift in Sources */,
+				4FF8BA3D1E6418AB002440D6 /* UIBarButtonItem+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +361,7 @@
 				4F1C133B1E63D9D9006BC53F /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../..;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		4F1C133F1E63D9D9006BC53F /* LaunchScreen.storyboard */ = {
@@ -241,7 +378,7 @@
 				4F1C13531E63FE81006BC53F /* Base */,
 			);
 			name = Home.storyboard;
-			path = ../Main;
+			path = ../../Main;
 			sourceTree = "<group>";
 		};
 		4F1C13551E63FEC9006BC53F /* Live.storyboard */ = {
@@ -250,7 +387,7 @@
 				4F1C13561E63FEC9006BC53F /* Base */,
 			);
 			name = Live.storyboard;
-			path = ../Main;
+			path = ../../Main;
 			sourceTree = "<group>";
 		};
 		4F1C13581E63FF05006BC53F /* Follow.storyboard */ = {
@@ -259,7 +396,7 @@
 				4F1C13591E63FF05006BC53F /* Base */,
 			);
 			name = Follow.storyboard;
-			path = ../Main;
+			path = ../../Main;
 			sourceTree = "<group>";
 		};
 		4F1C135B1E63FF37006BC53F /* Profile.storyboard */ = {
@@ -268,7 +405,7 @@
 				4F1C135C1E63FF37006BC53F /* Base */,
 			);
 			name = Profile.storyboard;
-			path = ../Main;
+			path = ../../Main;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -372,12 +509,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GEU5356DKB;
 				INFOPLIST_FILE = LSLZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lsl.LSLZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -388,6 +527,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = GEU5356DKB;
 				INFOPLIST_FILE = LSLZB/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
