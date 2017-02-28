@@ -15,6 +15,8 @@
 		4F1C13571E63FEC9006BC53F /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C13551E63FEC9006BC53F /* Live.storyboard */; };
 		4F1C135A1E63FF05006BC53F /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C13581E63FF05006BC53F /* Follow.storyboard */; };
 		4F1C135D1E63FF37006BC53F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1C135B1E63FF37006BC53F /* Profile.storyboard */; };
+		4F234A251E654590002D62BB /* LSLPageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F234A241E654590002D62BB /* LSLPageContentView.swift */; };
+		4F234A291E6547EE002D62BB /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F234A281E6547EE002D62BB /* UIColor+Extension.swift */; };
 		4F95CDD41E646D1A001F1807 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95CDD31E646D1A001F1807 /* Common.swift */; };
 		4F95CDD61E646F2D001F1807 /* LSLPageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F95CDD51E646F2D001F1807 /* LSLPageTitleView.swift */; };
 		4FF8BA291E64126A002440D6 /* LSLMainTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FF8BA281E64126A002440D6 /* LSLMainTabbarController.swift */; };
@@ -33,6 +35,8 @@
 		4F1C13561E63FEC9006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Live.storyboard; sourceTree = SOURCE_ROOT; };
 		4F1C13591E63FF05006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
 		4F1C135C1E63FF37006BC53F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LSLZB/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
+		4F234A241E654590002D62BB /* LSLPageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSLPageContentView.swift; sourceTree = "<group>"; };
+		4F234A281E6547EE002D62BB /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		4F95CDD31E646D1A001F1807 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		4F95CDD51E646F2D001F1807 /* LSLPageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSLPageTitleView.swift; sourceTree = "<group>"; };
 		4FF8BA281E64126A002440D6 /* LSLMainTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LSLMainTabbarController.swift; sourceTree = "<group>"; };
@@ -171,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				4F95CDD51E646F2D001F1807 /* LSLPageTitleView.swift */,
+				4F234A241E654590002D62BB /* LSLPageContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				4FF8BA3C1E6418AB002440D6 /* UIBarButtonItem+Extension.swift */,
+				4F234A281E6547EE002D62BB /* UIColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -357,6 +363,8 @@
 				4F1C13371E63D9D9006BC53F /* AppDelegate.swift in Sources */,
 				4F95CDD41E646D1A001F1807 /* Common.swift in Sources */,
 				4FF8BA3D1E6418AB002440D6 /* UIBarButtonItem+Extension.swift in Sources */,
+				4F234A251E654590002D62BB /* LSLPageContentView.swift in Sources */,
+				4F234A291E6547EE002D62BB /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

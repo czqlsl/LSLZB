@@ -10,10 +10,10 @@ import UIKit
 private let kScrollLineH : CGFloat = 2
 class LSLPageTitleView: UIView {
 
-    public var titles: [String]
+    fileprivate var titles: [String]
     
     
-     lazy var scrollView : UIScrollView = {
+    fileprivate lazy var scrollView : UIScrollView = {
        let scrollView = UIScrollView()
         scrollView.showsHorizontalScrollIndicator = false;
         scrollView.scrollsToTop = false
@@ -21,12 +21,12 @@ class LSLPageTitleView: UIView {
         return scrollView
     }()
     
-    lazy var scrollLine : UIView = {
+    fileprivate lazy var scrollLine : UIView = {
         let scrollLine = UIView()
         scrollLine.backgroundColor = UIColor.orange
         return scrollLine
     }()
-    lazy var titleLables : [UILabel] = [UILabel]()
+    fileprivate lazy var titleLables : [UILabel] = [UILabel]()
     //自定义构造
     init(frame: CGRect,titles :[String]) {
         self.titles = titles
@@ -42,7 +42,7 @@ class LSLPageTitleView: UIView {
 
 }
 extension LSLPageTitleView{
-    public func setupUI(){
+    fileprivate func setupUI(){
         addSubview(scrollView)
         scrollView.frame = bounds
         setupTitleLabels()

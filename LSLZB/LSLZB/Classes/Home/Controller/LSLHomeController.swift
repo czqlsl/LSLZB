@@ -11,23 +11,36 @@ import UIKit
 private let kTitleViewH :CGFloat = 40
 class LSLHomeController: UIViewController {
 
-    private lazy var pageTitleView : LSLPageTitleView = {
+    fileprivate lazy var pageTitleView : LSLPageTitleView = {
         let titleFrame =  CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titles = ["推荐","游戏","娱乐","趣玩"]
         
         let titleView = LSLPageTitleView(frame: titleFrame, titles:titles)
-        
-//      titleView.backgroundColor = UIColor.red
+        //titleView.backgroundColor = UIColor(rand: true)
         return titleView
         
     }()
     
+    fileprivate lazy var pageContentView :LSLPageContentView = {
+        let contentH = kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH
+        let contentFrame = CGRect(x: 0, y:kStatusBarH + kNavigationBarH + kTitleViewH , width: kScreenW, height: contentH)
+        
+        var childVs = [UIViewController]()
+        for _ in 0..<4{
+            let vc = UIViewController()
+            vc.view.backgroundColor = UIColor(rand:true)
+            childVs.append(vc)
+        }
+        
+        let contentView = LSLPageContentView(frame: contentFrame, childVcs: childVs, parentVc: self)
+        return contentView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        automaticallyAdjustsScrollViewInsets = false
-        setupUI()
         
-        view.addSubview(pageTitleView)
+        setupUI()
+       
     }
 
     
@@ -36,9 +49,11 @@ class LSLHomeController: UIViewController {
 
 extension LSLHomeController{
     
-    public func setupUI(){
+    fileprivate func setupUI(){
+        automaticallyAdjustsScrollViewInsets = false
         setupNav()
-        
+        view.addSubview(pageTitleView)
+        view.addSubview(pageContentView)
     }
     private func setupNav(){
         let btn = UIButton()
@@ -50,5 +65,6 @@ extension LSLHomeController{
         let scanItem = UIBarButtonItem.init(imageName: "Image_scan_click", highImageName: "Image_scan", size: size)
         let searchItem = UIBarButtonItem.init(imageName: "btn_search_clicked", highImageName: "btn_search", size: size)
         navigationItem.rightBarButtonItems = [searchItem,scanItem,historyItem]
+    
     }
 }
